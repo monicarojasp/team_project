@@ -1,14 +1,14 @@
-```markdown
-# Gene Expression Profiles to Identify Cancer Types – Part 1
+# Team Projects 
+
+# Project #1: Gene Expression Profiles to Identify Cancer Types
 
 ## Project Overview
 
-This is the first part of the project. The goal of project part 1 is to create a simple program with a database to analyze a selected dataset. This project aims to identify different types of cancer using gene expression profiles through regression analysis. Our team will design, implement, and test a regression model to predict cancer types based on gene expression data. This project involves data preprocessing, feature selection, model training, evaluation, and visualization of results. We will create a program with a database to analyze the data, demonstrating the business impact of our findings.
+The goal of the Project #1 is to create a simple program with a database to analyze a selected dataset. This project aims to identify different types of cancer using gene expression profiles through regression analysis. Our team designed, implemented, and tested a regression model to predict cancer types based on gene expression data. This project involves data preprocessing, feature selection, model training, evaluation, and visualization of results. We created a program with a database to analyze the data, demonstrating the business impact of our findings.
 
 ## Business Value of the Project
 
 The primary business value of this project lies in its potential to significantly improve cancer diagnosis and treatment. By accurately identifying cancer types through gene expression profiles, healthcare providers can:
-
 1. **Enhance Diagnostic Accuracy**: Reduce the chances of misdiagnosis, leading to more effective and personalized treatment plans.
 2. **Accelerate Treatment Decisions**: Speed up the diagnosis process, allowing for quicker intervention and potentially better patient outcomes.
 3. **Cost Efficiency**: Lower healthcare costs by reducing the need for multiple diagnostic tests and minimizing the trial-and-error approach in treatment plans.
@@ -24,7 +24,6 @@ The primary business value of this project lies in its potential to significantl
 ## Approach
 
 ### Data Collection and Preprocessing
-
 1. **Importing Libraries**
 2. **Reading the Data File**
 3. **Data Exploration and Cleansing**
@@ -33,23 +32,19 @@ The primary business value of this project lies in its potential to significantl
 6. **Data Normalization**
 
 ### Feature Selection and Model Training
-
 1. **Feature Selection**
 2. **Classification and Regression**
 
 ### Visualization of Results
-
 1. **Scatter Plot of Actual vs. Predicted Values**
 2. **Residual Plot**
 3. **Distribution of Residuals**
 4. **Coefficient Plot**
 
 ### Logistic Regression and Evaluation
-
 1. **Testing Logistic Regression**
 
 ### Dimensionality Reduction with PCA
-
 1. **Applying PCA**
 2. **Linear Regression on PCA Data**
 3. **Visualization of PCA Results**
@@ -114,7 +109,7 @@ The robustness of the analysis can be quantified by several metrics:
 5. **Implementation in Clinical Settings**: Integrating the model into clinical workflows may face challenges such as acceptance by healthcare professionals, need for additional training, and ensuring compatibility with existing systems.
 6. **Unknown Variables**: There may be unknown genetic or environmental factors influencing cancer that are not captured by the current model, potentially limiting its accuracy and effectiveness.
 
-By addressing these risks and caveats, and continuing to refine and validate the model, the project can provide valuable insights and practical applications in cancer diagnostics and treatment.
+In Part #2 of the project, we are planning to continue working on addressing the risks and caveats, and continuing to refine and validate the model to provide valuable insights and practical applications in cancer diagnostics and treatment.
 
 ## Conclusion
 
