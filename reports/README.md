@@ -141,8 +141,8 @@ This analysis successfully classified 5 different types of cancer gene expressio
 
 ## Appendix
 
-# Data sources: https://archive.ics.uci.edu/dataset/401/gene+expression+cancer+rna+seq
-# Source code and models: https://github.com/monicarojasp/team_project/tree/team-project-1
+### Data sources: https://archive.ics.uci.edu/dataset/401/gene+expression+cancer+rna+seq
+### Source code and models: https://github.com/monicarojasp/team_project/tree/team-project-1
 
 
 
