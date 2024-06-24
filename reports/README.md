@@ -89,7 +89,7 @@ The primary business value of this project lies in its potential to significantl
 
 ## Learnings and Experience
 
-This project, showcased on each team member's GitHub profile, will demonstrate their skills, ability to work effectively in a team, and potential to prospective employers. Each team member will create a video reflecting on their own learnings and experiences, covering:
+This project, showcased on each team member's GitHub profile, demonstrates our skills, ability to work effectively in a team, and potential to prospective employers. Each team member created a video reflecting on their own learnings and experiences, covering:
 
 - Key takeaways from the project.
 - Challenges faced and solutions.
@@ -99,11 +99,14 @@ This project, showcased on each team member's GitHub profile, will demonstrate t
 Links to each team member’s video:
 
 - Monica L. Rojas-Pena: https://drive.google.com/file/d/150xUgFfFxK_SdJutD2TEN8ma-TICMJnl/view?usp=share_link 
-- Serhiy Zvedenyuk:
-- Iryna Krutiy:
-- Derek Kam:
+- Serhiy Zvedenyuk: https://drive.google.com/drive/folders/1zv_rJXxEj0vgX9c1CDLLmo0uyLZ_NMX2?usp=sharing
+- Iryna Krutiy: https://drive.google.com/drive/folders/1v5RKA8ZJRQFYoad1QUJodRQ-aWhKDY_1?usp=sharing 
+- Derek Kam: https://drive.google.com/drive/folders/1rYOWh1iXXrADqs5Yo4p1RXnhMowd3Eo2?usp=sharing
 
 ## Robustness of Analysis - Quantification
+
+In the first part of our analysis we did not take into account the dimensionality of the data set. Later on we added a dimensionality reduction with PCA and dimensionality reduction with t-SNE.
+Based on the results we obtained the accuracy with t-SNE and Logistic Regression of 0.534.
 
 The robustness of the analysis can be quantified by several metrics:
 
@@ -116,7 +119,7 @@ The robustness of the analysis can be quantified by several metrics:
 ### Logistic Regression Performance
 
 - **Precision, Recall, F1-score**: The logistic regression model showed perfect classification with precision, recall, and F1-scores of 1.00 for all cancer types, indicating highly robust performance on the test data.
-- **Confusion Matrix**: The confusion matrix confirmed the perfect classification, showing no misclassifications.
+- **Confusion Matrix**: The confusion matrix confirmed the perfect classification, showing no misclassifications. 
 
 
 ## Risks, Caveats, Unknowns
@@ -141,8 +144,8 @@ This analysis successfully classified 5 different types of cancer gene expressio
 
 ## Appendix
 
-### Data sources: https://archive.ics.uci.edu/dataset/401/gene+expression+cancer+rna+seq
-### Source code and models: https://github.com/monicarojasp/team_project/tree/team-project-1
+#### Data sources: https://archive.ics.uci.edu/dataset/401/gene+expression+cancer+rna+seq
+#### Source code and models: https://github.com/monicarojasp/team_project/tree/team-project-1
 
 
 
