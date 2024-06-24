@@ -1,14 +1,14 @@
-```markdown
-# Gene Expression Profiles to Identify Cancer Types – Part 1
+# Team Projects 
+
+# Project #1: Gene Expression Profiles to Identify Cancer Types
 
 ## Project Overview
 
-This is the first part of the project. The goal of project part 1 is to create a simple program with a database to analyze a selected dataset. This project aims to identify different types of cancer using gene expression profiles through regression analysis. Our team will design, implement, and test a regression model to predict cancer types based on gene expression data. This project involves data preprocessing, feature selection, model training, evaluation, and visualization of results. We will create a program with a database to analyze the data, demonstrating the business impact of our findings.
+The goal of the Project #1 is to create a simple program with a database to analyze a selected dataset. This project aims to identify different types of cancer using gene expression profiles through regression analysis. Our team designed, implemented, and tested a regression model to predict cancer types based on gene expression data. This project involves data preprocessing, feature selection, model training, evaluation, and visualization of results. We created a program with a database to analyze the data, demonstrating the business impact of our findings.
 
 ## Business Value of the Project
 
 The primary business value of this project lies in its potential to significantly improve cancer diagnosis and treatment. By accurately identifying cancer types through gene expression profiles, healthcare providers can:
-
 1. **Enhance Diagnostic Accuracy**: Reduce the chances of misdiagnosis, leading to more effective and personalized treatment plans.
 2. **Accelerate Treatment Decisions**: Speed up the diagnosis process, allowing for quicker intervention and potentially better patient outcomes.
 3. **Cost Efficiency**: Lower healthcare costs by reducing the need for multiple diagnostic tests and minimizing the trial-and-error approach in treatment plans.
@@ -27,7 +27,7 @@ The primary business value of this project lies in its potential to significantl
 
 1. **Importing Libraries**
 2. **Reading the Data File**
-3. **Data Exploration and Cleansing**
+3. **Data Exploration and Cleaning**
 4. **Encoding the Labels**
 5. **Data Splitting**
 6. **Data Normalization**
@@ -54,6 +54,14 @@ The primary business value of this project lies in its potential to significantl
 2. **Linear Regression on PCA Data**
 3. **Visualization of PCA Results**
 
+### Dimensionality Reduction with t-SNE
+
+1. **Applying t-SNE**
+2. **Visualizing t-SNE Results**
+
+![Visualizing t-SNE Results](../reports/Project_Screenshot.png)
+
+
 ## Team Collaboration and Workflow
 
 ### Rules of Engagement
@@ -66,7 +74,7 @@ The primary business value of this project lies in its potential to significantl
 
 ### Decision Making
 
-- **Project Selection**: We had an initial brainstorming session to come up with multiple project options. Based on the project objective and keeping a strategic view in mind for part 2 of the project, we selected the one that fits best our interests, is scalable, and can be implemented within the project timeline.
+- **Project Selection**: We had an initial brainstorming session to come up with multiple project options. Based on the project objective and keeping a strategic view in mind for Part #2 of the project, we selected the one that fits best our interests, is scalable, and can be implemented within the project timeline.
 - **Dataset Selection**: As a team, we selected a dataset from open-source repositories.
 - **Question Focus**: We focused on identifying the relationship between gene expression profiles and cancer types.
 - **Task Assignment**: Tasks were assigned based on individual strengths and interests, ensuring that each team member could contribute effectively.
@@ -77,7 +85,7 @@ The primary business value of this project lies in its potential to significantl
 - **Repository Creation**: A new repository was created for the project.
 - **Branching Strategy**: Each team member worked on separate branches to avoid conflicts.
 - **Pull Requests**: Each team member created, reviewed, and merged at least one pull request.
-- **Merge Conflicts**: We learned how to resolve merge conflicts.
+- **Merge Conflicts**: We learned how to resolve merge conflicts. Helped each other.
 
 ## Learnings and Experience
 
@@ -90,7 +98,7 @@ This project, showcased on each team member's GitHub profile, will demonstrate t
 
 Links to each team member’s video:
 
-- Monica L. Rojas-Pena:
+- Monica L. Rojas-Pena: https://drive.google.com/file/d/150xUgFfFxK_SdJutD2TEN8ma-TICMJnl/view?usp=share_link 
 - Serhiy Zvedenyuk:
 - Iryna Krutiy:
 - Derek Kam:
@@ -100,10 +108,16 @@ Links to each team member’s video:
 The robustness of the analysis can be quantified by several metrics:
 
 1. **Model Performance**: The model's performance is evaluated using metrics such as Mean Squared Error (MSE) and R-squared (R²) values. For example:
-   - Mean Squared Error: mse = 0.02 (low value indicates high accuracy)
-   - R-squared: r2 = 0.95 (high value indicates that 95% of the variance in the data is explained by the model)
+   - **Mean Squared Error**: 0.11 (low value indicates high accuracy)
+   - **R-squared**: 0.96 (high value indicates that 96% of the variance in the data is explained by the model)
 2. **Cross-Validation**: The model is validated using cross-validation techniques to ensure its reliability and generalizability across different data subsets.
-3. **Feature Selection**: Top 50 features are selected based on mutual information scores, ensuring that the most relevant gene expression data is used in the model.
+3. **Feature Selection**: Top 200 features are selected based on mutual information scores, ensuring that the most relevant gene expression data is used in the model.
+
+### Logistic Regression Performance
+
+- **Precision, Recall, F1-score**: The logistic regression model showed perfect classification with precision, recall, and F1-scores of 1.00 for all cancer types, indicating highly robust performance on the test data.
+- **Confusion Matrix**: The confusion matrix confirmed the perfect classification, showing no misclassifications.
+
 
 ## Risks, Caveats, Unknowns
 
@@ -114,8 +128,21 @@ The robustness of the analysis can be quantified by several metrics:
 5. **Implementation in Clinical Settings**: Integrating the model into clinical workflows may face challenges such as acceptance by healthcare professionals, need for additional training, and ensuring compatibility with existing systems.
 6. **Unknown Variables**: There may be unknown genetic or environmental factors influencing cancer that are not captured by the current model, potentially limiting its accuracy and effectiveness.
 
-By addressing these risks and caveats, and continuing to refine and validate the model, the project can provide valuable insights and practical applications in cancer diagnostics and treatment.
+In Part #2 of the project, we are planning to continue working on addressing the risks and caveats, and continuing to refine and validate the model to provide valuable insights and practical applications in cancer diagnostics and treatment.
 
-## Conclusion
+## Conclusion and Recommendations
 
 This project provides insights into using gene expression profiles for cancer type identification and improves skills in machine learning, data analysis, and team collaboration. The primary business value lies in enhancing diagnostic accuracy, accelerating treatment decisions, and reducing healthcare costs. The opportunity for commercialization, research collaboration, and improved patient care highlights the significance of this work.
+
+Pan-cancer RNA-seq analysis is a powerful tool for uncovering molecular insights into cancer biology, differences as well as similarities of the types of cancer, identifying therapeutic targets, and advancing personalized cancer treatment strategies.
+
+This analysis successfully classified 5 different types of cancer gene expression profiles using a machine learning approach. Integrating deep learning into our analysis of cancer gene expression profiles holds great promise for refining classification accuracy and uncovering deeper insights into cancer biology. 
+
+
+## Appendix
+
+### Data sources: https://archive.ics.uci.edu/dataset/401/gene+expression+cancer+rna+seq
+### Source code and models: https://github.com/monicarojasp/team_project/tree/team-project-1
+
+
+
