@@ -148,7 +148,7 @@ This analysis successfully classified 5 different types of cancer gene expressio
 #### Source code and models: https://github.com/monicarojasp/team_project/tree/team-project-1
 
 
-# **Project #2:Breast Cancer Detection using Deep Learning**
+# **Project #2: Breast Cancer Detection using Deep Learning**
 
 ## Project Overview
 Breast cancer is one of the most common cancers worldwide and a leading cause of cancer-related deaths among women. Early detection and accurate diagnosis are crucial in reducing mortality rates. This project aims to develop a machine learning model that can automatically detect invasive ductal carcinoma (IDC) from histopathology images. IDC is the most common subtype of breast cancer, making its accurate identification a critical task in oncology.
