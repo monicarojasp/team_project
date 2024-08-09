@@ -155,73 +155,84 @@ Breast cancer is one of the most common cancers worldwide and a leading cause of
 
 ## Business Impact and Value
 Early and accurate detection of breast cancer can significantly improve patient outcomes by enabling timely treatment. The automated detection model developed in this project has the potential to:
-•	Reduce Diagnostic Time: By assisting pathologists with automated analysis, the model can significantly reduce the time required to diagnose IDC, allowing for quicker treatment decisions.
-•	Improve Accuracy: The model can act as a second opinion for pathologists, reducing the chances of misdiagnosis and ensuring that fewer cases go unnoticed.
-•	Cost Efficiency: Automating the detection process can reduce the costs associated with manual diagnosis, especially in regions with limited access to expert pathologists.
-•	Scalability: This solution can be scaled across hospitals and clinics globally, particularly in low-resource settings, where the shortage of skilled pathologists is a significant challenge.
++ **Reduce Diagnostic Time:** By assisting pathologists with automated analysis, the model can significantly reduce the time required to diagnose IDC, allowing for quicker treatment decisions.
++ **Improve Accuracy:** The model can act as a second opinion for pathologists, reducing the chances of misdiagnosis and ensuring that fewer cases go unnoticed.
++ **Cost Efficiency:** Automating the detection process can reduce the costs associated with manual diagnosis, especially in regions with limited access to expert pathologists.
++ **Scalability:** This solution can be scaled across hospitals and clinics globally, particularly in low-resource settings, where the shortage of skilled pathologists is a significant challenge.
 
 ## Technical Approach
 
 **Data Source**
 The dataset used in this project consists of 277,524 histopathology image patches, each of size 50x50 pixels, extracted from whole-slide images of breast cancer specimens. The dataset is publicly available on Kaggle.
-•	Positive Cases (IDC): 78,786 patches
-•	Negative Cases (Non-IDC): 198,738 patches
++ **Positive Cases (IDC):** 78,786 patches
++ **Negative Cases (Non-IDC):** 198,738 patches
 
 **Data Preprocessing**
-•	Data Augmentation: To increase the diversity of the training set, data augmentation techniques such as rotation, flipping, and scaling were applied.
-•	Normalization: Image pixel values were normalized to a range of [0, 1] to facilitate faster and more stable training of the neural network.
-•	Train-Validation-Test Split: The dataset was split into training, validation, and test sets in the ratio of 64:16:20.
++ **Data Augmentation:** To increase the diversity of the training set, data augmentation techniques such as rotation, flipping, and scaling were applied.
++ **Normalization:** Image pixel values were normalized to a range of [0, 1] to facilitate faster and more stable training of the neural network.
++ **Train-Validation-Test Split:** The dataset was split into training, validation, and test sets in the ratio of 64:16:20.
 
 **Model Architecture**
 The model used is a Convolutional Neural Network (CNN) with the following layers:
-•	Convolutional Layers: Three convolutional layers with ReLU activation, followed by max-pooling layers to reduce spatial dimensions.
-•	Dense Layers: Two fully connected layers with ReLU activation for feature extraction.
-•	Output Layer: A single neuron with sigmoid activation to output the probability of IDC presence.
++ **Convolutional Layers:** Three convolutional layers with ReLU activation, followed by max-pooling layers to reduce spatial dimensions.
++ **Dense Layers:** Two fully connected layers with ReLU activation for feature extraction.
++ **Output Layer:** A single neuron with sigmoid activation to output the probability of IDC presence.
 
 **Training**
-•	Loss Function: Binary Crossentropy was used as the loss function, with a final loss of 0.34.
-•	Optimizer: The Adam optimizer was employed for training due to its efficiency in handling large datasets.
-•	Early Stopping: Early stopping was implemented to prevent overfitting, stopping the training when the validation accuracy plateaued.
++ **Loss Function:** Binary Crossentropy was used as the loss function, with a final loss of 0.34.
++ **Optimizer:** The Adam optimizer was employed for training due to its efficiency in handling large datasets.
++ **Early Stopping:** Early stopping was implemented to prevent overfitting, stopping the training when the validation accuracy plateaued.
 
 **Evaluation**
 The model was evaluated on the test set with the following metrics:
-•	Accuracy: The model achieved an accuracy of 0.86 on the test set, demonstrating its capability to distinguish between IDC-positive and IDC-negative cases with high reliability.
-•	Confusion Matrix: To understand the classification performance across positive and negative classes.
-•	Classification Report: Precision, recall, and F1-score metrics were used to evaluate the model's performance.
++ **Accuracy:** The model achieved an accuracy of **0.86** on the test set, demonstrating its capability to distinguish between IDC-positive and IDC-negative cases with high reliability.
++ **Confusion Matrix:** To understand the classification performance across positive and negative classes.
++ **Classification Report:** Precision, recall, and F1-score metrics were used to evaluate the model's performance.
 
 **Results**
 The model achieved the following results on the test set:
-•	Precision: XX%
-•	Recall: XX%
-•	F1-Score: XX%
-Visualizations of correctly and incorrectly classified images highlight the model's strengths and areas for improvement.
++ **Precision:** 76%
++ **Recall:** 74%
++ **F1-Score:** 75%
+These results indicate that the model is reasonably effective at distinguishing between IDC-positive and IDC-negative cases, with a balanced performance across precision, recall, and F1-score metrics. Visualizations of correctly and incorrectly classified images highlight the model's strengths and areas for improvement.
 
-**Challenges and Learnings**
-•	Data Imbalance: The dataset had more negative cases than positive cases, which required careful handling to avoid biased predictions.
-•	Model Complexity: Balancing model complexity with the risk of overfitting was crucial, especially given the high-resolution image data.
-•	Computational Resources: Training a deep learning model on large datasets required significant computational resources, managed through efficient data loading and augmentation techniques.
+## Challenges and Learnings
 
-**Future Work**
++ **Data Imbalance:** The dataset had more negative cases than positive cases, which required careful handling to avoid biased predictions.
++ **Model Complexity:** Balancing model complexity with the risk of overfitting was crucial, especially given the high-resolution image data.
++ **Computational Resources:** Training a deep learning model on large datasets required significant computational resources, managed through efficient data loading and augmentation techniques.
+
+## Future Work
+
 Given more time, the following improvements could be made:
-•	Hyperparameter Tuning: Further tuning of hyperparameters to enhance model performance.
-•	Ensemble Models: Implementing ensemble methods to improve classification accuracy.
-•	Transfer Learning: Exploring transfer learning techniques using pre-trained models on similar datasets to boost performance.
++ **Hyperparameter Tuning:** Further tuning of hyperparameters to enhance model performance.
++ **Ensemble Models:** Implementing ensemble methods to improve classification accuracy.
++ **Transfer Learning:** Exploring transfer learning techniques using pre-trained models on similar datasets to boost performance.
 
-**Conclusion**
+## Conclusion
+
 This project demonstrates the application of deep learning in medical imaging, with a specific focus on breast cancer detection. The resulting model has the potential to assist in early diagnosis, reduce diagnostic errors, and provide scalable solutions to global healthcare challenges.
 Team Contributions
-•	[Monica]: Model architecture design and implementation, data preprocessing, and training.
-•	[Serhiy]: Data augmentation, visualization, and evaluation.
-•	[Iryna]: Repository management, README documentation, and model deployment.
-•	[Derek]: Model enhancement, and model deployment.
++ **Monica:** Model architecture design and implementation, data preprocessing, and training.
++ **Serhiy:** Data augmentation, visualization, and evaluation.
++ **Iryna:** Repository management, README documentation, and model deployment.
++ **Derek:** Model enhancement, and model deployment.
 
+## Links to each team member’s video:
 
-**Repository Structure**
-•	data/: Contains the processed data used for model training and evaluation.
-•	notebooks/: Jupyter notebooks documenting the data exploration, model training, and evaluation steps.
-•	models/: Saved models and checkpoints.
-•	src/: Source code for data processing, model definition, and utility functions.
-•	README.md: Project overview and documentation (this file).
+- Monica L. Rojas-Pena: https://drive.google.com/file/d/150xUgFfFxK_SdJutD2TEN8ma-TICMJnl/view?usp=share_link 
+- Serhiy Zvedenyuk: https://drive.google.com/drive/folders/1zv_rJXxEj0vgX9c1CDLLmo0uyLZ_NMX2?usp=sharing
+- Iryna Krutiy: https://drive.google.com/drive/folders/1v5RKA8ZJRQFYoad1QUJodRQ-aWhKDY_1?usp=sharing 
+- Derek Kam: https://drive.google.com/drive/folders/1rYOWh1iXXrADqs5Yo4p1RXnhMowd3Eo2?usp=sharing
+
+## Repository Structure
+
++ **data/:** Contains the processed data used for model training and evaluation.
++ **notebooks/:** Jupyter notebooks documenting the data exploration, model training, and evaluation steps.
++ **models/:** Saved models and checkpoints.
++ **src/:** Source code for data processing, model definition, and utility functions.
++ **README.md:** Project overview and documentation (this file).
+
 
 
 
