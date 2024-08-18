@@ -212,15 +212,20 @@ Given more time, the following improvements could be made:
 ## Conclusion
 
 This project demonstrates the application of deep learning in medical imaging, with a specific focus on breast cancer detection. The resulting model has the potential to assist in early diagnosis, reduce diagnostic errors, and provide scalable solutions to global healthcare challenges.
+
 Team Contributions
 + **Monica:** Model architecture design and implementation, data preprocessing, and training.
 + **Serhiy:** Data augmentation, visualization, and evaluation.
 + **Iryna:** Repository management, README documentation, and model deployment.
 + **Derek:** Model enhancement, and model deployment.
 
+## Link to Project Presentation:
+
+https://1drv.ms/p/c/e95909dbb7c71564/Eb42G-O0W9RApZwEloqgvhQBKo9RhnM_uu1DG-YLCs4-uQ?e=5b4YdT 
+
 ## Links to each team member’s video:
 
-- Monica L. Rojas-Pena: https://drive.google.com/file/d/150xUgFfFxK_SdJutD2TEN8ma-TICMJnl/view?usp=share_link 
+- Monica L. Rojas-Pena: https://drive.google.com/file/d/10KoT9VsJasAGfsXk91vjkoIH2cO7OXxX/view?usp=sharing 
 - Serhiy Zvedenyuk: https://drive.google.com/drive/folders/1zv_rJXxEj0vgX9c1CDLLmo0uyLZ_NMX2?usp=sharing
 - Iryna Krutiy: https://drive.google.com/drive/folders/1v5RKA8ZJRQFYoad1QUJodRQ-aWhKDY_1?usp=sharing 
 - Derek Kam: https://drive.google.com/drive/folders/1rYOWh1iXXrADqs5Yo4p1RXnhMowd3Eo2?usp=sharing
